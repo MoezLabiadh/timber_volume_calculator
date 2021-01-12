@@ -1,5 +1,6 @@
 # timber_volume_calculator
 This script calculates individual tree volumes based on LiDAR derived Canopy Height Module (CHM).
+
 The main Workflow steps:
 1) Delineate individual Tree Crowns using Local Maxima and Watershed segmentation algorythms
 2) Extract explanatory variables (Tree Height & Crown Area) for each tree
