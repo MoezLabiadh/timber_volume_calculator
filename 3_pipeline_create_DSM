@@ -1,0 +1,20 @@
+{
+
+    "pipeline":[
+        "GLA_1543_535_BCAlbers_SP000-2606_v2.las",
+        {
+            "type":"filters.range",
+            "limits":"returnnumber[1:1]"
+        },
+
+        {
+            "type": "writers.gdal",
+            "filename":"dsm.tif",
+            "output_type":"idw",
+            "gdaldriver":"GTiff",
+            "resolution": 0.5,
+            "radius": 1
+
+        }
+    ]
+}
