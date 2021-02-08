@@ -1,6 +1,6 @@
 {
     "pipeline":[
-         "GLA_1543_535_BCAlbers_SP000-2606_v2.las",
+         "C:/pdal_tests/GLA_1544_532_BCAlbers_SP000-2606_v2.laz",
         {
           "type":"filters.assign",
           "assignment":"Classification[:]=0"
@@ -22,8 +22,7 @@
         },
         {
           "type": "writers.gdal",
-          "last":true,
-          "filename":"dtm.tif",
+          "filename":"C:/pdal_tests/dtm.tif",
           "output_type":"idw",
           "gdaldriver":"GTiff",
           "resolution": 0.5,
