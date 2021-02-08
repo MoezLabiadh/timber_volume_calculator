@@ -1,0 +1,37 @@
+{
+    "pipeline":[
+         "GLA_1543_535_BCAlbers_SP000-2606_v2.las",
+        {
+          "type":"filters.assign",
+          "assignment":"Classification[:]=0"
+        },
+        {
+          "type":"filters.elm"
+        },
+        {
+          "type":"filters.outlier"
+        },
+        {
+
+          "type":"filters.smrf",
+          "ignore":"Classification[7:7]",
+          "slope":0.2,
+          "window":16,
+          "threshold":0.45,
+          "scalar":1.2
+        },
+        {
+          "type": "writers.gdal",
+          "last":true,
+          "filename":"dtm.tif",
+          "output_type":"idw",
+          "gdaldriver":"GTiff",
+          "resolution": 0.5,
+          "radius": 1
+        },
+        {
+          "type":"filters.range",
+          "limits":"Classification[2:2]"
+        }
+    ]
+}
