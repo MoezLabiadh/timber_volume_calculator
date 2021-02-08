@@ -1,7 +1,7 @@
 {
 
     "pipeline":[
-        "GLA_1543_535_BCAlbers_SP000-2606_v2.las",
+        "C:/pdal_tests/GLA_1544_532_BCAlbers_SP000-2606_v2.laz",
         {
             "type":"filters.range",
             "limits":"returnnumber[1:1]"
@@ -9,7 +9,7 @@
 
         {
             "type": "writers.gdal",
-            "filename":"dsm.tif",
+            "filename":"C:/pdal_tests/dsm.tif",
             "output_type":"idw",
             "gdaldriver":"GTiff",
             "resolution": 0.5,
