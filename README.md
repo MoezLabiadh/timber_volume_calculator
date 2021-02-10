@@ -4,10 +4,10 @@ This model calculates individual tree volumes based on LiDAR derived Canopy Heig
 
 ## Workflow
 The main Workflow steps:
-1) Delineate individual Tree Crowns using Local Maxima and Watershed segmentation algorythms
-2) Extract explanatory variables (Tree Height & Crown Area) for each tree
+1) Delineate individual Tree Crowns using Local Maxima and Watershed segmentation algorithm.
+2) Extract explanatory variables (Tree Height & Crown Area) for each tree.
 3) Predict DBH using Regression models – from "R.J. Hall et al., 1985: A Comparison of Existing Models for DBH estimation from Large-scale Photos"
-4) Estimate Volumes using BC forests 1976 volumes equations).
+4) Estimate Volumes using BC forests 1976 volumes equations.
 
 
 ## Required packages
