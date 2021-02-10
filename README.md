@@ -42,7 +42,7 @@ A Canopy Height Model (CHM) is produced by subtracting the DTM from the DSM: CHM
 DTM = Digital Terrain Model. This is a Bare Earth model with surface features not included
 DSM = Digital Surface Model. This is a model representing features elevated above the "Bare Earth".
 
-PDAL pipeline examples are provided above to calculate DTM and DSM. They can be run in Command Line:
+PDAL pipeline examples are provided above to calculate DTM and DSM from LiDAR Point Cloud (LAZ or LAS). They can be run in Command Line:
 ```bash
 pdal 00_pipeline_create_DSM.json
 pdal 00_pipeline_create_DSM.json
