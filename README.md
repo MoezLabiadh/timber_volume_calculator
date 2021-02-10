@@ -16,7 +16,7 @@ The following packages need to be installed on your Python Env to run the this c
 - Scipy
 - Pandas
 - Osgeo (gdal and ogr)
-- Scikit-iame
+- Scikit-image
 
 ```Python
 import os
@@ -38,8 +38,20 @@ import matplotlib.pyplot as plt
 ```
 
 ## Calculate CHM
+A Canopy Height Model (CHM) is produced by subtracting the DTM from the DSM: CHM = DSM - DTM.
+DTM = Digital Terrain Model. This is a Bare Earth model with surface features not included
+DSM = Digital Surface Model. This is a model representing features elevated above the "Bare Earth".
 
+PDAL pipeline examples are provided above to calculate DTM and DSM. They can be run in Command Line:
+```bash
+pdal 00_pipeline_create_DSM.json
+pdal 00_pipeline_create_DSM.json
+```
 
+GDAL calc can then be used to calculate the CHM:
+```bash
+gdal_calc.py -A dtm.tif -B dsm.tif --calc="B-A" --outfile chm.tif
+```
 
 ## Contributions
 All contributions are welcome.
