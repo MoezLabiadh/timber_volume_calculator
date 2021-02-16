@@ -38,10 +38,9 @@ import matplotlib.pyplot as plt
 ```
 
 ## Calculate CHM
-A Canopy Height Model (CHM) is produced by subtracting the DTM from the DSM: CHM = DSM - DTM.
-
-DTM = Digital Terrain Model. This is a Bare Earth model with surface features not included
-DSM = Digital Surface Model. This is a model representing features elevated above the "Bare Earth".
+A Canopy Height Model (CHM) is produced by subtracting the DTM from the DSM: CHM = DSM - DTM.<br/>
+DTM = Digital Terrain Model. This is a Bare Earth model with surface features not included.<br/>
+DSM = Digital Surface Model. This is a model representing features elevated above the "Bare Earth.
 
 PDAL pipeline examples are provided above to calculate DTM and DSM from LiDAR Point Cloud (LAZ or LAS). They can be run in Command Line:
 ```bash
