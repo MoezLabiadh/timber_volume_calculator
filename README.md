@@ -2,7 +2,7 @@
 ## Description
 This model calculates individual tree volumes based on LiDAR derived Canopy Height Module (CHM).
 
-Jupyter nbviewr: https://nbviewer.org/github/MoezLabiadh/timber_volume_calculator/blob/main/tree_volume_script.ipynb
+[Jupyter nbviewr](https://nbviewer.org/github/MoezLabiadh/timber_volume_calculator/blob/main/tree_volume_script.ipynb)
 
 ## Workflow
 The main Workflow steps:
